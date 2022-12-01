@@ -9,8 +9,9 @@
 <body>
     
 
-<h1>....its me tamil please fill your details</h1>
-<a href="Tamil/register_page">signup form</a>
+<h1>..<I>AMAZON PRIME</I>...</h1>
+
+<a href="Tamil/login_page">Log in your Account</a>
 
 
 </body>

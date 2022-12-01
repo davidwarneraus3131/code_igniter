@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+
 
 class Tamil extends CI_Controller {
 	public function index()
@@ -12,6 +12,9 @@ class Tamil extends CI_Controller {
 
         $this->load->view('register');
     }
+
+   
+    
 
 
 	
@@ -42,6 +45,49 @@ echo"record created successfully";
 
 
     }
+
+
+    function login_page(){
+
+        $this->load->view('login');
+    }
+
+function login_process(){
+
+    
+
+ $data['email']=$this->input->POST('email');
+ $data['password']=$this->input->POST('password');
+
+ $this->load->model('Tamil_model');
+ $status=$this->Tamil_model->login_data($data);
+ 
+ if($status==true){
+ 
+ echo"login success";
+ 
+ }
+ else{
+ 
+     echo"login failed";
+ }
+
 }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 ?>

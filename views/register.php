@@ -9,9 +9,9 @@
 <body>
     
 
-<form action="Tamil/register_process" method="POST">
+<form action="register_process" method="POST">
 
-
+<h1>Create YOur  Account</h1>
     <label>Enter your name</label>
     <input type="text" name="name" value="" required><br><br>
     <label>enter your Email</label>
